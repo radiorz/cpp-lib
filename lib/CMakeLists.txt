@@ -5,7 +5,7 @@ project(hello VERSION 1.0)
 # 添加库的源文件
 add_library(hello SHARED ${CMAKE_CURRENT_SOURCE_DIR}/libhello/hello.cpp)
 # 头文件
-target_include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/libhello)
+target_include_directories(hello PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/libhello)
 # 设置安装路径
 install(TARGETS hello DESTINATION lib)
 install(FILES hello.h DESTINATION include)
