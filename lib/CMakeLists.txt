@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(HELLO)
+link_directories (${PROJECT_SOURCE_DIR}/libhello)
+include_directories( ${PROJECT_SOURCE_DIR}/libhello)
+add_library(hello SHARED ${PROJECT_SOURCE_DIR}/libhello/hello.cpp)
+target_link_libraries (hello  libhello)
