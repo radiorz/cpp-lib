@@ -3,6 +3,9 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-void hello();
-string getMessage(string);
+
+extern "C"
+{
+  __declspec(dllexport) int hello(int);
+}
 #endif

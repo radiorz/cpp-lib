@@ -1,14 +1,7 @@
 const ffi = require("ffi-napi");
-const lib = new ffi.Library("hello", {
+const lib = new ffi.Library("../lib/build/libhello", {
   // 函数
-  hello: ["void", ["string"]],
-  getMessage: [
-    // 返回类型
-    "string",
-    // 参数类型列表
-    ["string"],
-  ],
+  hello: ["int", ["int"]],
 });
-lib.hello("123");
-const value = lib.getMessage("abc");
+const value = lib.hello(123);
 console.log(`value`, value);

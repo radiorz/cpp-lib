@@ -1,11 +1,7 @@
 #include "./hello.h"
 
-void hello(string value)
+int hello(int value)
 {
   cout << "value" << value << endl;
-}
-
-string getMessage(string message)
-{
-  return "hello" + message;
+  return 0;
 }
