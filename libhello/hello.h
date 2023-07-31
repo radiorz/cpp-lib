@@ -6,6 +6,6 @@ using namespace std;
 
 extern "C"
 {
-   int hello(int);
+  __declspec(dllexport) int hello(int);
 }
 #endif
