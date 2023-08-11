@@ -1,5 +1,4 @@
-rm ./build -r
-mkdir -p ./build
+#!/bin/bash
 # 生成文件
 cmake -B build
 cd ./build
