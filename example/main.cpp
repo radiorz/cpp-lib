@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../libhello/hello.h"
+#include "../libhello/lib/hello.h"
 using namespace std;
 int main()
 {
