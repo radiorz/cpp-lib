@@ -1,7 +1,11 @@
 const ffi = require("ffi-napi");
 const lib = new ffi.Library("../libhello/build/libhello", {
   // 函数
-  hello: ["int", ["int"]],
+  hello: ["void", ["string"]], // 字符串为啥不行
+  add: ["int", ["int", "int"]],
 });
-const value = lib.hello(123);
-console.log(`value`, value);
+const name = Buffer.from("world", "utf8");
+lib.hello(name);
+
+const sum = lib.add(1, 2);
+console.log(`sum`, sum);

@@ -4,3 +4,4 @@ Set-Location .\build
 # 生成 dll
 make
 Set-Location ..
+Copy-Item -Path "../libhello/build/libhello.dll" -Destination "./build"
