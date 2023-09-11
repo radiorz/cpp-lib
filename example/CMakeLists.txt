@@ -22,3 +22,4 @@ add_executable(main main.cpp)
 
 # 链接所需的库
 target_link_libraries(main hello)
+

@@ -65,5 +65,6 @@
     "titleBar.inactiveForeground": "#e7e7e799"
   },
   "peacock.color": "#2775b6",
-  "cmake.sourceDirectory": "D:/code/cpp-lib/example"
+  "cmake.sourceDirectory": "${workspaceFolder}/example",
+  "cmake.buildDirectory": "${workspaceFolder}/build"
 }
