@@ -4,9 +4,14 @@
 #include <string.h>
 using namespace std;
 
+// ??? extern "C" 
 extern "C"
-{
-  int hello(int); // windows 要加
-  // int hello(int);
+{ 
+  // ??? 为何报错
+  // declspec(dllexport); int hello(int); // windows 要加
+  int hello(int) {
+    std::clog << "123 "<< 123 << std::endl;
+    return 0;
+  }
 }
 #endif
