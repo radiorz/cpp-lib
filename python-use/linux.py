@@ -1,3 +1,4 @@
+# python2
 from ctypes import *
 
 pDll = CDLL("../libhello/build/libhello.so")

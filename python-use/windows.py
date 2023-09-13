@@ -1,6 +1,7 @@
+# python2
 from ctypes import *
 
-pDll = CDLL("./libhello.dll")
+pDll = CDLL("../libhello/build/libhello.dll")
 
 res = pDll.add(1,2)
 
