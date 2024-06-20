@@ -3,4 +3,5 @@ cmake -B build -G "MinGW Makefiles"
 Set-Location .\build
 # 生成 dll
 make
+make install
 Set-Location ..
