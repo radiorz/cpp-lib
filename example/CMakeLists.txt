@@ -25,5 +25,8 @@ target_link_libraries(main hello)
 
 # 打包用
 install(TARGETS main DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/dist)
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/build/libhello.dll DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/dist)
+# 获取 build 目录下所有的 DLL 文件
+file(GLOB DLL_FILES ${CMAKE_CURRENT_BINARY_DIR}/*.dll)
+
+install(FILES ${DLL_FILES} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/dist)
 
