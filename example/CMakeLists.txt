@@ -23,3 +23,7 @@ add_executable(main ./src/main.cpp)
 # 链接所需的库
 target_link_libraries(main hello)
 
+# 打包用
+install(TARGETS main DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/dist)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/build/libhello.dll DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/dist)
+
