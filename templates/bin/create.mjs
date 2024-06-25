@@ -28,6 +28,7 @@ async function bootstrap() {
       dirname(fileURLToPath(import.meta.url)),
       `../templates/${options.template}`
     ),
+    templateFiles: ["CMakeLists.txt"],
   });
   await creator.start();
 }
