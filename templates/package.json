@@ -1,0 +1,24 @@
+{
+  "name": "@tikkhun/create-cpp",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "./bin/create.mjs",
+  "bin": {
+    "tikkhun-create-vite": "./bin/create.mjs"
+  },
+  "scripts": {
+    "dev": "node ./bin/create.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "@tikkhun/create": "latest"
+  },
+  "dependencies": {
+    "@tikkhun/create": "0.1.1",
+    "inquirer": "^9.2.23"
+  }
+}
