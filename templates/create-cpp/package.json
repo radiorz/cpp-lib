@@ -7,6 +7,10 @@
   "bin": {
     "tikkhun-create-vite": "./bin/create.mjs"
   },
+  "files": [
+    "bin",
+    "templates"
+  ],
   "scripts": {
     "dev": "node ./bin/create.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
