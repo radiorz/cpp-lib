@@ -14,7 +14,7 @@ const prompts = [
     type: "list",
     name: "template",
     message: "项目模板",
-    choices: ["lib"],
+    choices: ["project","lib"],
     // 手动输入
   },
 ];
