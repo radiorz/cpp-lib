@@ -1,5 +1,5 @@
-#ifndef __HELLO_H__
-#define __HELLO_H__
+#ifndef __<%= projectName.toUpperCase() %>_H__
+#define __<%= projectName.toUpperCase() %>_H__
 
 #include <string>
 #include <iostream>
