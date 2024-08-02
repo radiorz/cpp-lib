@@ -1,9 +1,7 @@
 #include "./hello.h"
-#include "iostream"
-using namespace std;
 void hello(string name)
 {
-  cout << "hello " << name << "!"<< endl;
+  std::cout << "hello " << name << "!"<< std::endl;
 }
 
 int add(int a, int b){

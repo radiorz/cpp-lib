@@ -1,13 +1,9 @@
 #include "./hello.h"
+void hello(string name)
+{
+  std::cout << "hello " << name << "!"<< std::endl;
+}
 
-
-namespace hello {
-  void hello(string name)
-  {
-    cout << "hello " << name << "!"<< endl;
-  }
-
-  int add(int a, int b){
-    return a + b;
-  }
+int add(int a, int b){
+  return a + b;
 }
