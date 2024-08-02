@@ -1,11 +1,11 @@
 {
   "name": "@tikkhun/create-cpp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "type": "module",
   "main": "./bin/create.mjs",
   "bin": {
-    "tikkhun-create-vite": "./bin/create.mjs"
+    "tikkhun-create-cpp": "./bin/create.mjs"
   },
   "files": [
     "bin",
